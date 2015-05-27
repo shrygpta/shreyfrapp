@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/EachOffer"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/offerImage"
+        android:layout_width="1000sp"
+        android:layout_height="1000sp"
+        android:layout_margin="10sp"
+        />
+    <TextView
+        android:id="@+id/CompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/offerCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/offerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderSupplier"
+        android:text="Customer No"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/offerDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/offerCode"
+        android:layout_alignLeft="@+id/orderSupplier"
+        android:text="Customer"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/offervalidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/orderCheckbox"
+        android:layout_marginTop="7dip"
+        android:text="Total"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/orderTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/orderCheckbox"
+        android:text="Total"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/orderSupplierText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderCustomer"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/orderTotal"
+        android:text="Supplier No"
+        android:layout_marginTop="7dip"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/orderSupplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/orderSupplierText"
+        android:layout_toRightOf="@+id/orderTotal"
+        android:text="Supplier"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/orderStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderTotal"
+        android:layout_marginTop="5dip"
+        android:text="Status"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/orderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderSupplier"
+        android:layout_alignLeft="@id/orderSupplier"
+        android:layout_alignBaseline="@id/orderStatusText"
+        android:text="Pending"
+        android:textSize="12sp"
+        />
+    <Button
+        android:id="@+id/offerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ButtonText"
+        />
+</LinearLayout>
